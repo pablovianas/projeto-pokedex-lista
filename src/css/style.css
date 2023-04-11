@@ -1,0 +1,95 @@
+body{
+    max-width: 1280px;
+    margin: 0 auto;
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--cor-texto);
+}
+
+header img{
+    max-width: 30px;
+}
+
+header #botao-alterar-tema{
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+main{
+    margin-top: 15px;
+    max-height: calc(100vh - 150px);
+    overflow-y: scroll;
+}
+
+.listagem-pokemon{
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+    gap: 30px;
+    margin-top: 15px;
+    /*com grid */
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
+   
+}
+
+.listagem-pokemon .cartao-pokemon{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    align-items: center;
+    border-radius: 15px;
+    background-color: var(--cor-fundo-cartao);
+    width: 200px;
+}
+header .logo:hover,
+header #botao-alterar-tema img:hover,
+.listagem-pokemon .cartao-pokemon:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.listagem-pokemon .cartao-pokemon .info-pokemon{
+    display: flex;
+    justify-content: space-between;
+}
+.listagem-pokemon .cartao-pokemon .info-pokemon{
+    border: 1px solid var(--cor-texto);
+    border-radius: 10px;
+}
+
+.listagem-pokemon .cartao-pokemon .info-pokemon span{
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.listagem-pokemon .cartao-pokemon .tipos-pokemon{
+    display: flex;
+    gap: 15px;
+}
+
+.listagem-pokemon .cartao-pokemon .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    padding-right: 10px;
+}
+
+.listagem-pokemon .gif-pokemon{
+    width: 90px;
+    height: 90px;
+
+}
+
+
