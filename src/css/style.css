@@ -24,8 +24,6 @@ header #botao-alterar-tema{
 }
 main{
     margin-top: 15px;
-    max-height: calc(100vh - 150px);
-    overflow-y: scroll;
 }
 
 .listagem-pokemon{
